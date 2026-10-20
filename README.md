@@ -5,21 +5,21 @@ Android adventure game based on the book series by William Gargan.
 **Tagline:** There ain’t no home here. Just a fight to live another day.
 
 ## Features
-- 10 progressive levels of post-apocalyptic survival in the Central Valley
-- Choice-driven branching narrative with resource management (Health, Hunger, Supplies, Morale)
+- 10 progressive levels of post-apocalyptic survival adventure
+- Choice-based narrative with resource management (Health, Hunger, Supplies, Morale)
 - Multiple endings
-- Monetization ready: AdMob (rewarded + interstitial), Google Play Billing (consumables, Remove Ads, subscription)
-- Data-driven levels for easy expansion (add Level 11+ in Levels.kt)
-- Progress saving
+- Monetization: Rewarded ads, interstitials, IAPs, ad-removal subscription
+- Expandable: Add more levels by extending Levels.kt
+
+## Tech Stack
+- Kotlin + Jetpack Compose
+- Google Play Billing
+- AdMob
 
 ## Setup
-1. Open in Android Studio (Arctic Fox or newer)
+1. Open in Android Studio
 2. Sync Gradle
-3. Replace AdMob App ID in AndroidManifest.xml with your production ID
-4. Configure product IDs in Play Console to match MonetizationManager.kt
-5. Run on device/emulator (min SDK 26)
-
-## Expansion
-Add new levels by extending the levels list in `app/src/main/java/.../Levels.kt` and corresponding scenes in Narrative.kt.
+3. Replace test AdMob IDs and Billing product IDs with your production ones
+4. Build and run
 
 There ain’t no home here. Just a fight to live another day.
